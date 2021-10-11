@@ -10,12 +10,22 @@
         "s_worst":"O(n)"
     },
     {
-        "id": "1",
+        "id": "2",
         "name": "Heap",
         "t_best": "o(1)",
         "t_avg": "O(1)",
         "t_worst": "O(1)",
         "s_best": "O(1)",
+        "s_avg": "O(n)",
+        "s_worst":"O(n)"
+    },
+    {
+        "id": "3",
+        "name": "Binary Search",
+        "t_best": "O(logn)",
+        "t_avg": "O(logn)",
+        "t_worst": "O(logn)",
+        "s_best": "O(n)",
         "s_avg": "O(n)",
         "s_worst":"O(n)"
     }

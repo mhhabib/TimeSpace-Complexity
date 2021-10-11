@@ -20,7 +20,7 @@ class Index extends Component{
                     <span className="space"> Space</span> 
                     <span className="complexity"> Complexity</span>
                     <span className="repo">
-                    <Icon color="brown" name="github"/><a href="https://github.com/mhhabib" target='_blank' rel="noreferrer">Repository</a>
+                    <Icon color="brown" name="github"/><a href="https://github.com/mhhabib/TimeSpace-Complexity.git" target='_blank' rel="noreferrer">Repository</a>
                     </span>
                 </p>
             </div>
