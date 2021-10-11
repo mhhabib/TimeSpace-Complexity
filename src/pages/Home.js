@@ -9,7 +9,7 @@ class Home extends Component{
       
       return (
         <>
-            <Container text className="main">        
+            <Container className="main">        
               <Header as='h2'>Complexity Analysis</Header>
               <div class="ui divider"></div>
               <p>

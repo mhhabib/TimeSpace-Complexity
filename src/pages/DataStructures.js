@@ -7,7 +7,12 @@ class DataStructures extends Component{
     return (
       <>
       <Container className="main">
-      <Table celled selectable structured color='yellow' key='yellow'>
+        <h3>Data Structures Complexity Analysis</h3>
+        <div class="ui divider"></div>
+        <p><b>A</b> specialized format for organizing, processing, retrieving and storing data. There are several basic and advanced types of data structures, all designed to arrange data to suit a specific purpose. </p>
+
+        <p> <b>All</b> the data structures time and space complexity are listed the below table. </p>
+      <Table celled selectable structured color='yellow' key='yellow' className="tables">
         <Table.Header>
             <Table.Row>
                 <Table.HeaderCell rowSpan='2'>Name</Table.HeaderCell>

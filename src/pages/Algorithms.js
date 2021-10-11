@@ -7,6 +7,11 @@ class Algorithms extends Component{
     return (
       <>
       <Container className="main">
+      <h3>Algorithm Complexity Analysis</h3>
+        <div class="ui divider"></div>
+        <p><b>A</b> specialized format for organizing, processing, retrieving and storing data. There are several basic and advanced types of data structures, all designed to arrange data to suit a specific purpose. </p>
+
+        <p> <b>All</b> the algorithms time and space complexity are listed the below table. </p>
         <Table celled selectable structured color='teal' key='teal'>
         <Table.Header>
             <Table.Row>

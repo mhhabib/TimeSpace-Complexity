@@ -36,7 +36,10 @@ body {
   padding-right: 20px;
 }
 .main{
-  margin-top: 40px;
+  padding: 15px;
+}
+.tables{
+  margin-bottom: 20px;
 }
 @keyframes App-logo-spin {
   from {
