@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import { Container, Table} from 'semantic-ui-react';
+import { Container, Table,Header} from 'semantic-ui-react';
 import algorithms from "../data/algorithms.json";
 
 class Algorithms extends Component{
@@ -7,7 +7,7 @@ class Algorithms extends Component{
     return (
       <>
       <Container className="main">
-      <h3>Algorithm Complexity Analysis</h3>
+      <Header as='h2' color="teal">Algorithm Complexity Analysis</Header>
         <div class="ui divider"></div>
         <p><b>A</b> specialized format for organizing, processing, retrieving and storing data. There are several basic and advanced types of data structures, all designed to arrange data to suit a specific purpose. </p>
 

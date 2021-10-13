@@ -1,13 +1,12 @@
 import React,{Component} from "react";
-import {Container, Grid, Menu, Segment, Icon} from 'semantic-ui-react';
+import {Container, Grid, Menu, Icon} from 'semantic-ui-react';
 import {Route, BrowserRouter as Router,Link, Switch} from "react-router-dom";
 import Home from "./Home";
 import DataStructures from "./DataStructures";
 import Algorithms from "./Algorithms";
 
 class Index extends Component{
-    state = { activeItem: 'home' }
-
+    state = { activeItem: 'Home' }
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
   
     render() {
@@ -27,42 +26,42 @@ class Index extends Component{
             <Container className="main">
                 <Router>
                     <Grid>
-                        <Grid.Column width={4}>
-                            <Menu fluid vertical tabular>
-                            <Menu.Item
-                                name='home'
-                                active={activeItem === 'home'}
-                                onClick={this.handleItemClick}
-                                as={Link} to="/"
+                        <Grid.Column>
+                        <Menu tabular widths={4}>
+                            <Menu.Item 
+                            name='Home'
+                            active={activeItem === 'Home'}
+                            onClick={this.handleItemClick}
+                            as={Link} to="/"
+                            color="green"
                             />
                             <Menu.Item
-                                name='Data Structures'
-                                active={activeItem === 'Data Structures'}
-                                onClick={this.handleItemClick}
-                                as={Link} to="/ds"
+                            name='DataStructures'
+                            active={activeItem === 'DataStructures'}
+                            onClick={this.handleItemClick}
+                            as={Link} to="/ds"
+                            color="orange"
                             />
                             <Menu.Item
-                                name='Algorithms'
-                                active={activeItem === 'Algorithms'}
-                                onClick={this.handleItemClick}
-                                as={Link} to="/algo"
+                            name='Algorithms'
+                            active={activeItem === 'Algorithms'}
+                            onClick={this.handleItemClick}
+                            as={Link} to="/algo"
+                            color="teal"
                             />
                             <Menu.Item
-                                name='Feedback'
-                                active={activeItem === 'Feedback'}
-                                onClick={this.handleItemClick}
+                            name='Feedback'
+                            active={activeItem === 'Feedback'}
+                            onClick={this.handleItemClick}
+                            as={Link} to="#"
+                            color="red"
                             />
-                            </Menu>
-                        </Grid.Column>
-                
-                        <Grid.Column stretched width={12}>
-                            <Segment>
-                                <Switch>
-                                    <Route path="/" exact component={Home}/>
-                                    <Route path="/ds" component={DataStructures}/>
-                                    <Route path="/algo" component={Algorithms}/>
-                                </Switch>
-                            </Segment>
+                        </Menu>
+                        <Switch>
+                            <Route path="/" exact component={Home}/>
+                            <Route path="/ds" component={DataStructures}/>
+                            <Route path="/algo" component={Algorithms}/>
+                        </Switch>
                         </Grid.Column>
                     </Grid>
                 </Router>

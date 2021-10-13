@@ -10,7 +10,7 @@ class Home extends Component{
       return (
         <>
             <Container className="main">        
-              <Header as='h2'>Complexity Analysis</Header>
+              <Header as='h2' color="green">Complexity Analysis</Header>
               <div class="ui divider"></div>
               <p>
                 Time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input. Similarly, 

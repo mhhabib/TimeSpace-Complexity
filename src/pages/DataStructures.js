@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import { Container, Table} from 'semantic-ui-react';
+import { Container, Table, Header} from 'semantic-ui-react';
 import datastructures from '../data/datastructures.json';
 
 class DataStructures extends Component{
@@ -7,7 +7,7 @@ class DataStructures extends Component{
     return (
       <>
       <Container className="main">
-        <h3>Data Structures Complexity Analysis</h3>
+        <Header as='h2' color="orange">Data Structures Complexity Analysis</Header>
         <div class="ui divider"></div>
         <p><b>A</b> specialized format for organizing, processing, retrieving and storing data. There are several basic and advanced types of data structures, all designed to arrange data to suit a specific purpose. </p>
 
@@ -17,14 +17,12 @@ class DataStructures extends Component{
             <Table.Row>
                 <Table.HeaderCell rowSpan='2'>Name</Table.HeaderCell>
                 <Table.HeaderCell colSpan='3'>Time Complexity</Table.HeaderCell>
-                <Table.HeaderCell colSpan='3'>Space Complexity</Table.HeaderCell>
+                <Table.HeaderCell colSpan='1'>Space Complexity</Table.HeaderCell>
             </Table.Row>
             <Table.Row>
                 <Table.HeaderCell>Best</Table.HeaderCell>
                 <Table.HeaderCell>Average</Table.HeaderCell>
                 <Table.HeaderCell>Worst</Table.HeaderCell>
-                <Table.HeaderCell>Best</Table.HeaderCell>
-                <Table.HeaderCell>Average</Table.HeaderCell>
                 <Table.HeaderCell>Worst</Table.HeaderCell>
             </Table.Row>
         </Table.Header>
@@ -37,8 +35,6 @@ class DataStructures extends Component{
                   <Table.Cell positive>{ds.t_best}</Table.Cell>
                   <Table.Cell >{ds.t_avg}</Table.Cell>
                   <Table.Cell negative>{ds.t_worst}</Table.Cell>
-                  <Table.Cell positive>{ds.s_best}</Table.Cell>
-                  <Table.Cell >{ds.s_avg}</Table.Cell>
                   <Table.Cell negative>{ds.s_worst}</Table.Cell>
                 </Table.Row>
               );
